@@ -1,0 +1,4 @@
+username: "seven-admin"
+password: "123456"
+host: "http://ec2-18-61-25-137.ap-south-2.compute.amazonaws.com:15672"
+vhost: "robots"

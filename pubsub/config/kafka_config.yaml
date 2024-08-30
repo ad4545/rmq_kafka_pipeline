@@ -1,0 +1,2 @@
+bootstrap.servers: "ec2-13-201-94-176.ap-south-1.compute.amazonaws.com:9092"
+
