@@ -71,7 +71,7 @@ type conductor struct {
 type Conductor interface {
 	RunPipelines(*sync.WaitGroup)
 	BuildPipelines() error
-	CheckForNewTopics(chan<- []string, chan int, config.RMQConfig)
+	// CheckForNewTopics(chan<- []string, chan int, config.RMQConfig)
 	Start(Topics map[string]string) error
 }
 
@@ -90,7 +90,7 @@ func (c *conductor) LoadKafkaRmqMapping(topics map[string]string) error {
 	}
 
 	// Static ID that will be prefixed
-	staticID := "1234"
+	staticID := "ccnt_robot1"
 
 	// Iterate over the input topics array
 	for queueName, routing_key := range topics {
@@ -126,7 +126,8 @@ func (c *conductor) ConfigureBuilders() error {
 				Name:  binding.ModifiedTopic, // Setting the Kafka topic name same as the channel name
 			},
 			KafkaConnConfig: config.KafkaConfig{
-				Broker: c.kafkaConfig.Broker,
+				Broker1: c.kafkaConfig.Broker1,
+				Broker2: c.kafkaConfig.Broker2,
 			},
 			Name: rmq_topic,
 		}
@@ -180,42 +181,42 @@ func fetchRoutingKeys(rabbitURL, vhost, exchange, username, password string) (ma
 	return routingKeys, nil
 }
 
-func (c *conductor) CheckForNewTopics(topicStream chan<- []string, done chan int, rmq_config config.RMQConfig) {
-	c.ticker = time.NewTicker(500 * time.Millisecond)
+// func (c *conductor) CheckForNewTopics(topicStream chan<- []string, done chan int, rmq_config config.RMQConfig) {
+// 	c.ticker = time.NewTicker(500 * time.Millisecond)
 
-	defer c.ticker.Stop()
-	defer c.waitGroup.Done()
+// 	defer c.ticker.Stop()
+// 	defer c.waitGroup.Done()
 
-	for {
-		select {
-		case <-c.ticker.C:
-			bindings, err := fetchRoutingKeys(rmq_config.Host, rmq_config.Vhost, "robot1", rmq_config.Username, rmq_config.Password)
-			if err != nil {
-				c.errorChannels["self"] <- err
-			}
+// 	for {
+// 		select {
+// 		case <-c.ticker.C:
+// 			bindings, err := fetchRoutingKeys(rmq_config.Host, rmq_config.Vhost, "robot1", rmq_config.Username, rmq_config.Password)
+// 			if err != nil {
+// 				c.errorChannels["self"] <- err
+// 			}
 
-			newQueues := []string{}
-			for queue, routing_key := range bindings {
-				if _, ok := c.internalState.Topics[queue]; !ok {
-					newQueues = append(newQueues, queue)
-					modifiedTopic := "1234" + "_" + strings.ReplaceAll(queue, ".", "_")
+// 			newQueues := []string{}
+// 			for queue, routing_key := range bindings {
+// 				if _, ok := c.internalState.Topics[queue]; !ok {
+// 					newQueues = append(newQueues, queue)
+// 					modifiedTopic := "1234" + "_" + strings.ReplaceAll(queue, ".", "_")
 
-					// Store the original topic as the key and the struct as the value
-					c.internalState.Topics[queue] = TopicMapping{
-						ModifiedTopic: modifiedTopic,
-						RoutingKey:    routing_key,
-					}
-				}
-			}
+// 					// Store the original topic as the key and the struct as the value
+// 					c.internalState.Topics[queue] = TopicMapping{
+// 						ModifiedTopic: modifiedTopic,
+// 						RoutingKey:    routing_key,
+// 					}
+// 				}
+// 			}
 
-			if len(newQueues) > 0 {
-				topicStream <- newQueues
-			}
-		case <-done:
-			return
-		}
-	}
-}
+// 			if len(newQueues) > 0 {
+// 				topicStream <- newQueues
+// 			}
+// 		case <-done:
+// 			return
+// 		}
+// 	}
+// }
 
 type S struct {
 }
@@ -287,30 +288,30 @@ func (c *conductor) Start(Topics map[string]string) error {
 		return err
 	}
 
-	topicStream := make(chan []string)
-	done := make(chan int)
+	// topicStream := make(chan []string)
+	// done := make(chan int)
 	c.waitGroup = &sync.WaitGroup{}
 
-	c.waitGroup.Add(1)
-	go func(topicS chan []string, done chan int, conductor *conductor) {
-		defer c.waitGroup.Done()
-		for {
-			select {
-			case topics := <-topicS:
-				log.Printf("New topic discovered %v\n", topics)
-				c.ConfigureBuilders()
-				c.BuildPipelines()
-				c.RunPipelines(c.waitGroup)
-			case err := <-c.errorChannels["self"]:
-				log.Printf("Error scanning for new topics: %v\n", err)
-			case <-done:
-				return
-			}
-		}
-	}(topicStream, done, c)
+	// c.waitGroup.Add(1)
+	// go func(topicS chan []string, done chan int, conductor *conductor) {
+	// 	defer c.waitGroup.Done()
+	// 	for {
+	// 		select {
+	// 		case topics := <-topicS:
+	// 			log.Printf("New topic discovered %v\n", topics)
+	// 			c.ConfigureBuilders()
+	// 			c.BuildPipelines()
+	// 			c.RunPipelines(c.waitGroup)
+	// 		case err := <-c.errorChannels["self"]:
+	// 			log.Printf("Error scanning for new topics: %v\n", err)
+	// 		case <-done:
+	// 			return
+	// 		}
+	// 	}
+	// }(topicStream, done, c)
 
-	c.waitGroup.Add(1)
-	go c.CheckForNewTopics(topicStream, done, c.rmqConfig)
+	// c.waitGroup.Add(1)
+	// go c.CheckForNewTopics(topicStream, done, c.rmqConfig)
 
 	//start pipelines here
 	c.RunPipelines(c.waitGroup)

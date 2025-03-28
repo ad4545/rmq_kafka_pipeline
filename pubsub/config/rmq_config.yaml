@@ -1,4 +1,4 @@
-username: "seven-admin"
-password: "123456"
-host: "http://ec2-18-61-25-137.ap-south-2.compute.amazonaws.com:15672"
+username: "sevenadmin"
+password: "seven0657"
+host: "10.0.0.63:5672"
 vhost: "robots"

@@ -1,7 +1,6 @@
 package channel
 
 import (
-	"fmt"
 	"sync"
 )
 
@@ -35,25 +34,10 @@ func (b *Bridge[S, P]) Run(wg *sync.WaitGroup) {
 		select {
 
 		case msg, ok := <-b.input:
-			fmt.Println(msg, "message on bridge--------")
 			if !ok {
-				fmt.Println("called---ok")
 				continue
 			}
-
-			// if b.converter == nil {
-			// 	b.errCh <- fmt.Errorf("Converter not set")
-			// 	continue
-			// }
-
-			// out, err := b.converter(msg)
-
-			// //let the higher level code deal with the error
-			// if err != nil {
-			// 	b.errCh <- fmt.Errorf("Failure converting %s message", b.name)
-			// 	continue
-			// }
-
+			
 			b.output <- msg
 
 		case <-b.done:

@@ -111,7 +111,7 @@ func main() {
 		log.Fatalf("Error decoding RMQ Config from %s: %v", config_path, err)
 	}
 
-	bindings, err := fetchBindings(rmq_config.Host, rmq_config.Vhost, "robot1", rmq_config.Username, rmq_config.Password)
+	bindings, err := fetchBindings("http://13.234.184.4:15672", rmq_config.Vhost, "robot1", rmq_config.Username, rmq_config.Password)
 	if err != nil {
 		log.Fatalf("Error fetching queue-routingkey bindings: %v", err)
 	}

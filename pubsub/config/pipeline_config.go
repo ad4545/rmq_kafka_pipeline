@@ -5,7 +5,8 @@ import (
 )
 
 type KafkaConfig struct {
-	Broker string `yaml:"bootstrap.servers"`
+	Broker1 string `yaml:"broker1"`
+	Broker2 string `yaml:"broker2"`
 }
 
 type KafkaPublisherConfig struct {

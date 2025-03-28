@@ -5,13 +5,13 @@ import (
 	"rmqkafka_pipeline/pubsub/config"
 	"sync"
 
-	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/IBM/sarama"
 )
 
 type KPublisher[P any] struct {
 	name     string
 	config   config.KafkaPublisherConfig
-	producer *kafka.Producer
+	producer sarama.SyncProducer
 	ready    bool
 }
 
@@ -19,15 +19,20 @@ func (kp *KPublisher[P]) Send(msg []byte) error {
 	if kp.config.Topic == "" {
 		return fmt.Errorf("topic is not set for the producer")
 	}
+    message := &sarama.ProducerMessage{
+		Topic: kp.config.Topic,
+		Value: sarama.ByteEncoder(msg),
+	}
+	
 
-	err := kp.producer.Produce(&kafka.Message{
-		TopicPartition: kafka.TopicPartition{Topic: &kp.config.Topic, Partition: kafka.PartitionAny},
-		Value:          msg,
-	}, nil)
+	partition, offset,err := kp.producer.SendMessage(message)
 
 	if err != nil {
-		return fmt.Errorf("failed to send message: %v", err)
-	}
+        fmt.Println("Error producing message:", err)
+		fmt.Println("Partition producing message:", partition)
+		fmt.Println("Offset producing message:", offset)
+        return err
+    }
 
 	return nil
 }
@@ -50,7 +55,7 @@ func (r *KPublisher[P]) Run(in <-chan []byte, done chan int, errCh chan error, w
 	}
 }
 
-func NewKafkaPublisher[P any](conf config.KafkaPublisherConfig, producer *kafka.Producer) (*KPublisher[P], error) {
+func NewKafkaPublisher[P any](conf config.KafkaPublisherConfig, producer sarama.SyncProducer) (*KPublisher[P], error) {
 	p := &KPublisher[P]{
 		config:   conf,
 		producer: producer,

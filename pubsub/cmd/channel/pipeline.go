@@ -7,9 +7,14 @@ import (
 	"rmqkafka_pipeline/pubsub/publishers/kafkaproducer"
 	"rmqkafka_pipeline/pubsub/subscribers"
 	"rmqkafka_pipeline/pubsub/subscribers/rmq"
+	"github.com/aws/aws-msk-iam-sasl-signer-go/signer"
 	"sync"
+	"context"
 
-	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/IBM/sarama"
+	// "github.com/aws/aws-sdk-go-v2/config"
+	// "github.com/aws/aws-sdk-go-v2/service/s3"
+	// "github.com/aws/aws-sdk-go-v2/aws"
 )
 
 type pipeline[S any, P any] struct {
@@ -25,6 +30,14 @@ type pipeline[S any, P any] struct {
 	active       bool
 }
 
+type MSKAccessTokenProvider struct {
+}
+
+func (m *MSKAccessTokenProvider) Token() (*sarama.AccessToken, error) {
+	token, _, err := signer.GenerateAuthToken(context.TODO(), "ap-south-1")
+	return &sarama.AccessToken{Token: token}, err
+}
+
 func NewPipeline[S any, P any](conf config.RRPipelineConfig) (*pipeline[S, P], error) {
 	in := make(chan []byte)
 	out := make(chan []byte)
@@ -38,10 +51,22 @@ func NewPipeline[S any, P any](conf config.RRPipelineConfig) (*pipeline[S, P], e
 		return nil, fmt.Errorf("failed to connect RabbitMq server %s:%v", conf.Name, err)
 	}
 
-	// creating Kafka producer
-	producer, err := kafka.NewProducer(&kafka.ConfigMap{
-		"bootstrap.servers": conf.KafkaConnConfig.Broker,
-	})
+	brokers := []string{
+		conf.KafkaConnConfig.Broker1,
+		conf.KafkaConnConfig.Broker2,
+	}
+
+	config := sarama.NewConfig()
+ 	config.Producer.RequiredAcks = sarama.WaitForAll
+	config.Producer.Return.Successes = true
+	config.Producer.Return.Errors = true
+ 	config.Producer.Retry.Max = 5
+ 	config.Net.SASL.Enable = true
+ 	config.Net.SASL.Mechanism = sarama.SASLTypeOAuth
+ 	config.Net.SASL.TokenProvider = &MSKAccessTokenProvider{}
+ 	config.Net.TLS.Enable = true
+
+	producer, err := sarama.NewSyncProducer(brokers, config)
 
 	if err != nil {
 		return nil, fmt.Errorf("failed to create Kafka Producer %s:%v", conf.Name, err)
