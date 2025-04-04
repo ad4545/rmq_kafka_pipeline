@@ -4,8 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"log"
+	// "log"
 	"net/http"
+	"log/slog"
 	"net/url"
 	"rmqkafka_pipeline/pubsub/config"
 	"rmqkafka_pipeline/pubsub/iface"
@@ -66,6 +67,8 @@ type conductor struct {
 	//used by conductor discovery goroutine to publish new TopicInfo
 
 	ticker *time.Ticker
+
+	logger *slog.Logger
 }
 
 type Conductor interface {
@@ -75,11 +78,12 @@ type Conductor interface {
 	Start(Topics map[string]string) error
 }
 
-func NewConductor(rmqConfig config.RMQConfig, kafkaConfig config.KafkaConfig) (Conductor, error) {
+func NewConductor(rmqConfig config.RMQConfig, kafkaConfig config.KafkaConfig, logger *slog.Logger) (Conductor, error) {
 
 	return &conductor{
 		rmqConfig:   rmqConfig,
 		kafkaConfig: kafkaConfig,
+		logger: logger,
 	}, nil
 }
 
@@ -227,19 +231,20 @@ func (c *conductor) BuildPipelines() error {
 	for config_name, conf := range c.internalState.Configs {
 		if pipe, ok := c.internalState.Pipelines[config_name]; ok {
 			if pipe.IsActive() {
-				log.Printf("Pipeline %s is active, will not rebuild\n", pipe.Name())
+				c.logger.Error("Pipeline is already active:",pipe.Name())
 				continue
 			} else {
-				log.Printf("Pipeline %s is inactive\n", pipe.Name())
+				c.logger.Error("Pipeline is inactive",pipe.Name())
 			}
 		}
 
 		p, err := NewPipeline[S, P](*conf)
-		if err != nil {
-			return fmt.Errorf("failed to build pipeline for %s: %v", config_name, err)
+		if err != nil { 
+			c.logger.Error("failed to build pipeline for", config_name, err)
+			return err
 		}
 		c.internalState.Pipelines[config_name] = p
-		log.Printf("Pipeline created for %s\n", config_name)
+		c.logger.Info("Pipeline started for",slog.String("topic",config_name))
 		c.errorChannels[config_name] = c.internalState.Pipelines[config_name].GetErrorStream()
 	}
 
@@ -255,7 +260,7 @@ func (c *conductor) RunPipelines(wg *sync.WaitGroup) {
 				for {
 					select {
 					case err := <-errCh:
-						log.Printf("Error on %s: %v\n", pipeline.Name(), err)
+						c.logger.Error("Error on:", pipeline.Name(), err)
 					}
 				}
 			}(c.errorChannels[pipeline.Name()])
@@ -275,16 +280,19 @@ func (c *conductor) Start(Topics map[string]string) error {
 	err := c.LoadKafkaRmqMapping(Topics)
 
 	if err != nil {
+		c.logger.Error("Error at loading kafkaRMQMapping")
 		return err
 	}
 
 	err = c.ConfigureBuilders()
 	if err != nil {
+		c.logger.Error("Error at configuring buidlers")
 		return err
 	}
 
 	err = c.BuildPipelines()
 	if err != nil {
+		c.logger.Error("Error at building pipelines")
 		return err
 	}
 

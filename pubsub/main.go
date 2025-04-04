@@ -4,7 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"log"
+	"log/slog"
+	// "log"
 	"net/http"
 	"net/url"
 	"os"
@@ -79,11 +80,22 @@ func main() {
 	_, b, _, _ := runtime.Caller(0)
 	basepath := filepath.Dir(b)
 
+	// logging setup
+
+	logFile, err := os.OpenFile("logs/app.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+    if err != nil {
+        panic(err)
+    }
+	
+    defer logFile.Close()
+
+	logger := slog.New(slog.NewTextHandler(logFile, nil))
+
 	// load rabbitMQ config
 	config_path := filepath.Join(basepath, "./config/", "rmq_config.yaml")
 	f, err := os.Open(config_path)
 	if err != nil {
-		log.Fatalf("RMQ Configuration not found @ %s: %v", config_path, err)
+		logger.Error("RMQ Configuration not found")
 	}
 	defer f.Close()
 
@@ -92,14 +104,14 @@ func main() {
 
 	err = decoder.Decode(&rmq_config)
 	if err != nil {
-		log.Fatalf("Error decoding RMQ Config from %s: %v", config_path, err)
+		logger.Error("Error decoding RMQ Configs")
 	}
 
 	// load kafka config
 	config_path = filepath.Join(basepath, "./config/", "kafka_config.yaml")
 	nf, err := os.Open(config_path)
 	if err != nil {
-		log.Fatalf("RMQ Configuration not found @ %s: %v", config_path, err)
+		logger.Error("Kafka Configuration not found")
 	}
 	defer nf.Close()
 
@@ -108,22 +120,22 @@ func main() {
 
 	err = kafkaDecoder.Decode(&kafka_config)
 	if err != nil {
-		log.Fatalf("Error decoding RMQ Config from %s: %v", config_path, err)
+		logger.Error("Error decoding Kafka Config")
 	}
 
 	bindings, err := fetchBindings("http://13.234.184.4:15672", rmq_config.Vhost, "robot1", rmq_config.Username, rmq_config.Password)
 	if err != nil {
-		log.Fatalf("Error fetching queue-routingkey bindings: %v", err)
+		logger.Error("Error fetching queue-routingkey bindings")
 	}
 
-	conductor, err := channel.NewConductor(rmq_config, kafka_config)
+	conductor, err := channel.NewConductor(rmq_config, kafka_config,logger)
 	if err != nil {
-		log.Fatalf("New Conductor Could not be created: %v", err)
+		logger.Error("New Conductor Could not be created")
 	}
 
 	err = conductor.Start(bindings)
 	if err != nil {
-		log.Fatalf("Conductor Failed: %v", err)
+		logger.Error("Conductor Failed")
 	}
 
 }
