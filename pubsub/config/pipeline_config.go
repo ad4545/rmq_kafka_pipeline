@@ -5,8 +5,7 @@ import (
 )
 
 type KafkaConfig struct {
-	Broker1 string `yaml:"broker1"`
-	Broker2 string `yaml:"broker2"`
+	Brokers []string `yaml:"brokers"`
 }
 
 type KafkaPublisherConfig struct {

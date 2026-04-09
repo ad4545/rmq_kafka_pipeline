@@ -1,4 +1,4 @@
 username: "sevenadmin"
 password: "seven0657"
-host: "10.0.0.63:5672"
+host: "10.0.0.11:5672"
 vhost: "robots"

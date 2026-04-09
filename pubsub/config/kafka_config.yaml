@@ -1,2 +1,2 @@
-broker1: "b-2.concentricmsk.b7guuo.c4.kafka.ap-south-1.amazonaws.com:9098"
-broker2: "b-1.concentricmsk.b7guuo.c4.kafka.ap-south-1.amazonaws.com:9098"
+brokers:
+  - "10.0.0.12:9092" # Update with the actual private IP of your EC2 Kafka broker

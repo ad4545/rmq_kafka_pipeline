@@ -130,8 +130,7 @@ func (c *conductor) ConfigureBuilders() error {
 				Name:  binding.ModifiedTopic, // Setting the Kafka topic name same as the channel name
 			},
 			KafkaConnConfig: config.KafkaConfig{
-				Broker1: c.kafkaConfig.Broker1,
-				Broker2: c.kafkaConfig.Broker2,
+				Brokers: c.kafkaConfig.Brokers,
 			},
 			Name: rmq_topic,
 		}
