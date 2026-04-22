@@ -1,2 +1,6 @@
 time=2025-04-04T08:28:23.144Z level=INFO msg="Pipeline started for" topic=cmd_vel
 time=2025-04-04T08:32:23.487Z level=INFO msg="Pipeline started for" topic=cmd_vel
+time=2026-04-09T09:49:13.475Z level=ERROR msg="Error fetching queue-routingkey bindings"
+time=2026-04-09T09:49:47.051Z level=ERROR msg="Error fetching queue-routingkey bindings"
+time=2026-04-09T10:04:26.705Z level=INFO msg="Pipeline started for" topic=odom_with_amcl
+time=2026-04-09T10:04:26.712Z level=INFO msg="Pipeline started for" topic=uavcanRosBridge.uavcan_ros_bridge.Battery

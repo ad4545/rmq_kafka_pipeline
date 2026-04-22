@@ -13,6 +13,7 @@ import (
 	"rmqkafka_pipeline/pubsub/cmd/channel"
 	"rmqkafka_pipeline/pubsub/config"
 	"runtime"
+	"strings"
 
 	"gopkg.in/yaml.v2"
 )
@@ -123,9 +124,11 @@ func main() {
 		logger.Error("Error decoding Kafka Config")
 	}
 
-	bindings, err := fetchBindings("http://13.234.184.4:15672", rmq_config.Vhost, "robot1", rmq_config.Username, rmq_config.Password)
+	rmqHost := strings.Split(rmq_config.Host, ":")[0]
+	rabbitMgmtURL := fmt.Sprintf("http://%s:15672", rmqHost)
+	bindings, err := fetchBindings(rabbitMgmtURL, rmq_config.Vhost, "robot1", rmq_config.Username, rmq_config.Password)
 	if err != nil {
-		logger.Error("Error fetching queue-routingkey bindings")
+		logger.Error("Error fetching queue-routingkey bindings", slog.String("error", err.Error()))
 	}
 
 	conductor, err := channel.NewConductor(rmq_config, kafka_config,logger)
