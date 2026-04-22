@@ -1,0 +1,9 @@
+Started pipeline uavcanRosBridge.uavcan_ros_bridge.Battery
+Started pipeline odom_with_amcl
+Started pipeline task_feedback
+Started pipeline robot1:odom_with_amcl
+Started pipeline robot1:task_feedback
+Started pipeline robot1:uavcanRosBridge.uavcan_ros_bridge.Battery
+Started pipeline robot1:uavcanRosBridge.uavcan_ros_bridge.Battery
+Started pipeline robot1:odom_with_amcl
+Started pipeline robot1:task_feedback

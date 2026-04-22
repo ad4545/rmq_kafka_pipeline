@@ -69,13 +69,15 @@ type conductor struct {
 	ticker *time.Ticker
 
 	logger *slog.Logger
+
+	mu sync.RWMutex
 }
 
 type Conductor interface {
 	RunPipelines(*sync.WaitGroup)
 	BuildPipelines() error
 	// CheckForNewTopics(chan<- []string, chan int, config.RMQConfig)
-	Start(Topics map[string]string) error
+	Start(exchangeBindings map[string]map[string]string) error
 }
 
 func NewConductor(rmqConfig config.RMQConfig, kafkaConfig config.KafkaConfig, logger *slog.Logger) (Conductor, error) {
@@ -87,26 +89,29 @@ func NewConductor(rmqConfig config.RMQConfig, kafkaConfig config.KafkaConfig, lo
 	}, nil
 }
 
-func (c *conductor) LoadKafkaRmqMapping(topics map[string]string) error {
+func (c *conductor) LoadKafkaRmqMapping(exchangeBindings map[string]map[string]string) error {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+
 	// Ensure the Topics map is initialized
 	if c.internalState.Topics == nil {
 		c.internalState.Topics = map[string]TopicMapping{}
 	}
 
-	// Static ID that will be prefixed
-	staticID := "ccnt_robot1"
+	// Iterate over the nested exchange bindings
+	for exchange, topics := range exchangeBindings {
+		for queueName, routing_key := range topics {
+			// Create the modified topic by replacing dots with underscores and prefixing with the exchange
+			modifiedTopic := "ccnt_" + exchange + "_" + strings.ReplaceAll(queueName, ".", "_")
 
-	// Iterate over the input topics array
-	for queueName, routing_key := range topics {
-		// Create the modified topic by replacing dots with underscores and prefixing with the static ID
-		modifiedTopic := staticID + "_" + strings.ReplaceAll(queueName, ".", "_")
+			// Use compound key to prevent collisions if different exchanges bind to same queue
+			compoundKey := exchange + ":" + queueName
 
-		// Get the corresponding routing key, if available
-
-		// Store the original topic as the key and the struct as the value
-		c.internalState.Topics[queueName] = TopicMapping{
-			ModifiedTopic: modifiedTopic,
-			RoutingKey:    routing_key,
+			// Store the original topic as the key and the struct as the value
+			c.internalState.Topics[compoundKey] = TopicMapping{
+				ModifiedTopic: modifiedTopic,
+				RoutingKey:    routing_key,
+			}
 		}
 	}
 
@@ -114,12 +119,21 @@ func (c *conductor) LoadKafkaRmqMapping(topics map[string]string) error {
 }
 
 func (c *conductor) ConfigureBuilders() error {
+	c.mu.Lock()
+	defer c.mu.Unlock()
 
-	for rmq_topic, binding := range c.internalState.Topics {
-		c.internalState.Configs[rmq_topic] = &config.RRPipelineConfig{
+	for compoundKey, binding := range c.internalState.Topics {
+		parts := strings.SplitN(compoundKey, ":", 2)
+		if len(parts) != 2 {
+			continue
+		}
+		exchange := parts[0]
+		rmq_topic := parts[1]
+
+		c.internalState.Configs[compoundKey] = &config.RRPipelineConfig{
 			RMQConnConfig: c.rmqConfig,
 			RMQSubConfig: config.RMQClientConfig{
-				Exchange:   "robot1",
+				Exchange:   exchange,
 				Topic:      rmq_topic,
 				RoutingKey: binding.RoutingKey,
 				Durable:    true,
@@ -132,10 +146,50 @@ func (c *conductor) ConfigureBuilders() error {
 			KafkaConnConfig: config.KafkaConfig{
 				Brokers: c.kafkaConfig.Brokers,
 			},
-			Name: rmq_topic,
+			Name: compoundKey,
 		}
 	}
 	return nil
+}
+
+type Exchange struct {
+	Name string `json:"name"`
+}
+
+func fetchExchanges(rabbitURL, vhost, prefix, username, password string) ([]string, error) {
+	encodedVhost := url.PathEscape(vhost)
+	apiURL := fmt.Sprintf("%s/api/exchanges/%s", rabbitURL, encodedVhost)
+	client := &http.Client{}
+	req, err := http.NewRequest("GET", apiURL, nil)
+	if err != nil {
+		return nil, err
+	}
+	req.SetBasicAuth(username, password)
+
+	resp, err := client.Do(req)
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return nil, err
+	}
+
+	var exchanges []Exchange
+	if err := json.Unmarshal(body, &exchanges); err != nil {
+		return nil, err
+	}
+
+	var matched []string
+	for _, ex := range exchanges {
+		if strings.HasPrefix(ex.Name, prefix) {
+			matched = append(matched, ex.Name)
+		}
+	}
+
+	return matched, nil
 }
 
 func fetchRoutingKeys(rabbitURL, vhost, exchange, username, password string) (map[string]string, error) {
@@ -184,42 +238,56 @@ func fetchRoutingKeys(rabbitURL, vhost, exchange, username, password string) (ma
 	return routingKeys, nil
 }
 
-// func (c *conductor) CheckForNewTopics(topicStream chan<- []string, done chan int, rmq_config config.RMQConfig) {
-// 	c.ticker = time.NewTicker(500 * time.Millisecond)
+func (c *conductor) CheckForNewTopics(topicStream chan<- map[string]map[string]string, done chan int, rmq_config config.RMQConfig) {
+	c.ticker = time.NewTicker(15 * time.Second)
 
-// 	defer c.ticker.Stop()
-// 	defer c.waitGroup.Done()
+	defer c.ticker.Stop()
+	defer c.waitGroup.Done()
 
-// 	for {
-// 		select {
-// 		case <-c.ticker.C:
-// 			bindings, err := fetchRoutingKeys(rmq_config.Host, rmq_config.Vhost, "robot1", rmq_config.Username, rmq_config.Password)
-// 			if err != nil {
-// 				c.errorChannels["self"] <- err
-// 			}
+	rmqHost := strings.Split(rmq_config.Host, ":")[0]
+	rabbitMgmtURL := fmt.Sprintf("http://%s:15672", rmqHost)
 
-// 			newQueues := []string{}
-// 			for queue, routing_key := range bindings {
-// 				if _, ok := c.internalState.Topics[queue]; !ok {
-// 					newQueues = append(newQueues, queue)
-// 					modifiedTopic := "1234" + "_" + strings.ReplaceAll(queue, ".", "_")
+	for {
+		select {
+		case <-c.ticker.C:
+			exchanges, err := fetchExchanges(rabbitMgmtURL, rmq_config.Vhost, "robot", rmq_config.Username, rmq_config.Password)
+			if err != nil {
+				c.logger.Error("Error fetching exchanges in CheckForNewTopics", slog.String("error", err.Error()))
+				continue
+			}
 
-// 					// Store the original topic as the key and the struct as the value
-// 					c.internalState.Topics[queue] = TopicMapping{
-// 						ModifiedTopic: modifiedTopic,
-// 						RoutingKey:    routing_key,
-// 					}
-// 				}
-// 			}
+			newBindings := make(map[string]map[string]string)
+			hasNew := false
 
-// 			if len(newQueues) > 0 {
-// 				topicStream <- newQueues
-// 			}
-// 		case <-done:
-// 			return
-// 		}
-// 	}
-// }
+			for _, ex := range exchanges {
+				bindings, err := fetchRoutingKeys(rabbitMgmtURL, rmq_config.Vhost, ex, rmq_config.Username, rmq_config.Password)
+				if err != nil {
+					c.logger.Error("Error fetching bindings in CheckForNewTopics", slog.String("exchange", ex), slog.String("error", err.Error()))
+					continue
+				}
+
+				c.mu.RLock()
+				for queueName, routing_key := range bindings {
+					compoundKey := ex + ":" + queueName
+					if _, ok := c.internalState.Topics[compoundKey]; !ok {
+						if newBindings[ex] == nil {
+							newBindings[ex] = make(map[string]string)
+						}
+						newBindings[ex][queueName] = routing_key
+						hasNew = true
+					}
+				}
+				c.mu.RUnlock()
+			}
+
+			if hasNew {
+				topicStream <- newBindings
+			}
+		case <-done:
+			return
+		}
+	}
+}
 
 type S struct {
 }
@@ -227,13 +295,16 @@ type P struct {
 }
 
 func (c *conductor) BuildPipelines() error {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+
 	for config_name, conf := range c.internalState.Configs {
 		if pipe, ok := c.internalState.Pipelines[config_name]; ok {
 			if pipe.IsActive() {
-				c.logger.Error("Pipeline is already active:",pipe.Name())
+				// c.logger.Info("Pipeline is already active:", slog.String("name", pipe.Name()))
 				continue
 			} else {
-				c.logger.Error("Pipeline is inactive",pipe.Name())
+				c.logger.Error("Pipeline is inactive", slog.String("name", pipe.Name()))
 			}
 		}
 
@@ -251,6 +322,9 @@ func (c *conductor) BuildPipelines() error {
 }
 
 func (c *conductor) RunPipelines(wg *sync.WaitGroup) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+
 	for _, pipeline := range c.internalState.Pipelines {
 		if !pipeline.IsActive() {
 			c.errorChannels[pipeline.Name()] = pipeline.GetErrorStream()
@@ -269,14 +343,14 @@ func (c *conductor) RunPipelines(wg *sync.WaitGroup) {
 	}
 }
 
-func (c *conductor) Start(Topics map[string]string) error {
+func (c *conductor) Start(exchangeBindings map[string]map[string]string) error {
 
 	c.errorChannels = map[string]chan error{}
 	c.errorChannels["self"] = make(chan error)
 	c.internalState.Pipelines = map[string]iface.Pipeline{}
 	c.internalState.Configs = map[string]*config.RRPipelineConfig{}
 
-	err := c.LoadKafkaRmqMapping(Topics)
+	err := c.LoadKafkaRmqMapping(exchangeBindings)
 
 	if err != nil {
 		c.logger.Error("Error at loading kafkaRMQMapping")
@@ -295,30 +369,31 @@ func (c *conductor) Start(Topics map[string]string) error {
 		return err
 	}
 
-	// topicStream := make(chan []string)
-	// done := make(chan int)
+	topicStream := make(chan map[string]map[string]string)
+	done := make(chan int)
 	c.waitGroup = &sync.WaitGroup{}
 
-	// c.waitGroup.Add(1)
-	// go func(topicS chan []string, done chan int, conductor *conductor) {
-	// 	defer c.waitGroup.Done()
-	// 	for {
-	// 		select {
-	// 		case topics := <-topicS:
-	// 			log.Printf("New topic discovered %v\n", topics)
-	// 			c.ConfigureBuilders()
-	// 			c.BuildPipelines()
-	// 			c.RunPipelines(c.waitGroup)
-	// 		case err := <-c.errorChannels["self"]:
-	// 			log.Printf("Error scanning for new topics: %v\n", err)
-	// 		case <-done:
-	// 			return
-	// 		}
-	// 	}
-	// }(topicStream, done, c)
+	c.waitGroup.Add(1)
+	go func(topicS chan map[string]map[string]string, done chan int, conductor *conductor) {
+		defer c.waitGroup.Done()
+		for {
+			select {
+			case topics := <-topicS:
+				c.logger.Info("New bindings discovered", slog.Any("bindings", topics))
+				c.LoadKafkaRmqMapping(topics)
+				c.ConfigureBuilders()
+				c.BuildPipelines()
+				c.RunPipelines(c.waitGroup)
+			case err := <-c.errorChannels["self"]:
+				c.logger.Error("Error scanning for new topics", slog.String("error", err.Error()))
+			case <-done:
+				return
+			}
+		}
+	}(topicStream, done, c)
 
-	// c.waitGroup.Add(1)
-	// go c.CheckForNewTopics(topicStream, done, c.rmqConfig)
+	c.waitGroup.Add(1)
+	go c.CheckForNewTopics(topicStream, done, c.rmqConfig)
 
 	//start pipelines here
 	c.RunPipelines(c.waitGroup)

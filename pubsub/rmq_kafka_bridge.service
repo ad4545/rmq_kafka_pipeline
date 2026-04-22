@@ -1,0 +1,17 @@
+[Unit]
+Description=RabbitMQ to Kafka Bridge Service
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/rmq_kafka_pipeline/pubsub
+ExecStart=/home/ubuntu/rmq_kafka_pipeline/pubsub/pubsub_binary
+Restart=always
+RestartSec=5
+StandardOutput=append:/home/ubuntu/rmq_kafka_pipeline/pubsub/logs/stdout.log
+StandardError=append:/home/ubuntu/rmq_kafka_pipeline/pubsub/logs/stderr.log
+
+[Install]
+WantedBy=multi-user.target

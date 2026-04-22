@@ -23,11 +23,51 @@ type Queue struct {
 	Name string `json:"name"`
 }
 
+type Exchange struct {
+	Name string `json:"name"`
+}
+
 type Binding struct {
 	Source          string `json:"source"`
 	Destination     string `json:"destination"`
 	DestinationType string `json:"destination_type"`
 	RoutingKey      string `json:"routing_key"`
+}
+
+func fetchExchanges(rabbitURL, vhost, prefix, username, password string) ([]string, error) {
+	encodedVhost := url.PathEscape(vhost)
+	apiURL := fmt.Sprintf("%s/api/exchanges/%s", rabbitURL, encodedVhost)
+	client := &http.Client{}
+	req, err := http.NewRequest("GET", apiURL, nil)
+	if err != nil {
+		return nil, err
+	}
+	req.SetBasicAuth(username, password)
+
+	resp, err := client.Do(req)
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return nil, err
+	}
+
+	var exchanges []Exchange
+	if err := json.Unmarshal(body, &exchanges); err != nil {
+		return nil, err
+	}
+
+	var matched []string
+	for _, ex := range exchanges {
+		if strings.HasPrefix(ex.Name, prefix) {
+			matched = append(matched, ex.Name)
+		}
+	}
+
+	return matched, nil
 }
 
 func fetchBindings(rabbitURL, vhost, exchange, username, password string) (map[string]string, error) {
@@ -126,9 +166,20 @@ func main() {
 
 	rmqHost := strings.Split(rmq_config.Host, ":")[0]
 	rabbitMgmtURL := fmt.Sprintf("http://%s:15672", rmqHost)
-	bindings, err := fetchBindings(rabbitMgmtURL, rmq_config.Vhost, "robot1", rmq_config.Username, rmq_config.Password)
+	
+	exchanges, err := fetchExchanges(rabbitMgmtURL, rmq_config.Vhost, "robot", rmq_config.Username, rmq_config.Password)
 	if err != nil {
-		logger.Error("Error fetching queue-routingkey bindings", slog.String("error", err.Error()))
+		logger.Error("Error fetching exchanges", slog.String("error", err.Error()))
+	}
+
+	allBindings := make(map[string]map[string]string)
+	for _, ex := range exchanges {
+		bindings, err := fetchBindings(rabbitMgmtURL, rmq_config.Vhost, ex, rmq_config.Username, rmq_config.Password)
+		if err != nil {
+			logger.Error("Error fetching queue-routingkey bindings for exchange", slog.String("exchange", ex), slog.String("error", err.Error()))
+			continue
+		}
+		allBindings[ex] = bindings
 	}
 
 	conductor, err := channel.NewConductor(rmq_config, kafka_config,logger)
@@ -136,9 +187,8 @@ func main() {
 		logger.Error("New Conductor Could not be created")
 	}
 
-	err = conductor.Start(bindings)
+	err = conductor.Start(allBindings)
 	if err != nil {
 		logger.Error("Conductor Failed")
 	}
-
 }
