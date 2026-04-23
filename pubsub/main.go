@@ -167,7 +167,7 @@ func main() {
 	rmqHost := strings.Split(rmq_config.Host, ":")[0]
 	rabbitMgmtURL := fmt.Sprintf("http://%s:15672", rmqHost)
 	
-	exchanges, err := fetchExchanges(rabbitMgmtURL, rmq_config.Vhost, "robot", rmq_config.Username, rmq_config.Password)
+	exchanges, err := fetchExchanges(rabbitMgmtURL, rmq_config.Vhost, "amr", rmq_config.Username, rmq_config.Password)
 	if err != nil {
 		logger.Error("Error fetching exchanges", slog.String("error", err.Error()))
 	}

@@ -7,3 +7,553 @@ Started pipeline robot1:uavcanRosBridge.uavcan_ros_bridge.Battery
 Started pipeline robot1:uavcanRosBridge.uavcan_ros_bridge.Battery
 Started pipeline robot1:odom_with_amcl
 Started pipeline robot1:task_feedback
+Started pipeline robot3:odom_with_amcl
+Started pipeline robot1:task_feedback
+Started pipeline robot1:uavcanRosBridge.uavcan_ros_bridge.Battery
+Started pipeline robot3:odom_with_amcl
+Started pipeline robot1:odom_with_amcl
+Started pipeline robot1:odom_with_amcl
+Started pipeline robot1:task_feedback
+Started pipeline robot3:odom_with_amcl
+Started pipeline robot1:uavcanRosBridge.uavcan_ros_bridge.Battery
+Started pipeline robot3:odom_with_amcl
+Started pipeline robot1:odom_with_amcl
+Started pipeline robot1:task_feedback
+Started pipeline robot1:uavcanRosBridge.uavcan_ros_bridge.Battery
+Started pipeline robot3:odom_with_amcl
+Started pipeline robot1:uavcanRosBridge.uavcan_ros_bridge.Battery
+Started pipeline robot1:bridge_q_robot1_odom_with_amcl
+Started pipeline robot1:bridge_q_robot1_task_feedback
+Started pipeline robot1:bridge_q_robot1_uavcanRosBridge.uavcan_ros_bridge.Battery
+Started pipeline robot1:odom_with_amcl
+Started pipeline robot1:task_feedback
+Started pipeline robot3:bridge_q_robot3_odom_with_amcl
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Started pipeline robot1:uavcanRosBridge.uavcan_ros_bridge.Battery
+Started pipeline robot3:odom_with_amcl
+Started pipeline robot1:odom_with_amcl
+Started pipeline robot1:task_feedback
+Started pipeline amr.001.exchange:amr.001.task_feedback.q
+Started pipeline amr.001.exchange:amr.001.odom_with_amcl.q
+Started pipeline amr.001.exchange:amr.001.cmd_vel.q

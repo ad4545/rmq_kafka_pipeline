@@ -1,3 +1,4 @@
-time=2026-04-22T14:51:26.241Z level=INFO msg="Pipeline started for" topic=robot1:odom_with_amcl
-time=2026-04-22T14:51:26.248Z level=INFO msg="Pipeline started for" topic=robot1:task_feedback
-time=2026-04-22T14:51:26.254Z level=INFO msg="Pipeline started for" topic=robot1:uavcanRosBridge.uavcan_ros_bridge.Battery
+time=2026-04-23T07:11:25.394Z level=INFO msg="Pipeline started for" topic=amr.001.exchange:amr.001.odom_with_amcl.q
+time=2026-04-23T07:11:25.402Z level=INFO msg="Pipeline started for" topic=amr.001.exchange:amr.001.task_feedback.q
+time=2026-04-23T09:02:25.406Z level=INFO msg="New bindings discovered" bindings=map[amr.001.exchange:map[amr.001.cmd_vel.q:amr.001.cmd_vel]]
+time=2026-04-23T09:02:25.413Z level=INFO msg="Pipeline started for" topic=amr.001.exchange:amr.001.cmd_vel.q

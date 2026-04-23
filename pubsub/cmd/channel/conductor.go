@@ -101,8 +101,8 @@ func (c *conductor) LoadKafkaRmqMapping(exchangeBindings map[string]map[string]s
 	// Iterate over the nested exchange bindings
 	for exchange, topics := range exchangeBindings {
 		for queueName, routing_key := range topics {
-			// Create the modified topic by replacing dots with underscores and prefixing with the exchange
-			modifiedTopic := "ccnt_" + exchange + "_" + strings.ReplaceAll(queueName, ".", "_")
+			// Create the modified topic by removing .q from the end of the queueName
+			modifiedTopic := strings.TrimSuffix(queueName, ".q")
 
 			// Use compound key to prevent collisions if different exchanges bind to same queue
 			compoundKey := exchange + ":" + queueName
@@ -250,7 +250,7 @@ func (c *conductor) CheckForNewTopics(topicStream chan<- map[string]map[string]s
 	for {
 		select {
 		case <-c.ticker.C:
-			exchanges, err := fetchExchanges(rabbitMgmtURL, rmq_config.Vhost, "robot", rmq_config.Username, rmq_config.Password)
+			exchanges, err := fetchExchanges(rabbitMgmtURL, rmq_config.Vhost, "amr", rmq_config.Username, rmq_config.Password)
 			if err != nil {
 				c.logger.Error("Error fetching exchanges in CheckForNewTopics", slog.String("error", err.Error()))
 				continue
