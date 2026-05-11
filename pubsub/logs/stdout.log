@@ -557,3 +557,2874 @@ Started pipeline robot1:task_feedback
 Started pipeline amr.001.exchange:amr.001.task_feedback.q
 Started pipeline amr.001.exchange:amr.001.odom_with_amcl.q
 Started pipeline amr.001.exchange:amr.001.cmd_vel.q
+Topic amr.001.task_feedback config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.cmd_vel config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.odom_with_amcl config updated: retention.ms=5000, cleanup.policy=delete
+Started pipeline amr.001.exchange:amr.001.odom_with_amcl.q
+Started pipeline amr.001.exchange:amr.001.task_feedback.q
+Started pipeline amr.001.exchange:amr.001.cmd_vel.q
+Topic amr.001.task_feedback created with retention.ms=5000 and cleanup.policy=delete
+Topic amr.001.cmd_vel created with retention.ms=5000 and cleanup.policy=delete
+Topic amr.001.odom_with_amcl created with retention.ms=5000 and cleanup.policy=delete
+Started pipeline amr.001.exchange:amr.001.odom_with_amcl.q
+Started pipeline amr.001.exchange:amr.001.task_feedback.q
+Started pipeline amr.001.exchange:amr.001.cmd_vel.q
+Topic amr.002.odom_with_amcl config updated: retention.ms=5000, cleanup.policy=delete
+Started pipeline amr.002.exchange:amr.002.odom_with_amcl.q
+Topic amr.001.cmd_vel config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.odom_with_amcl config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.task_feedback config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.odom_with_amcl config updated: retention.ms=5000, cleanup.policy=delete
+Started pipeline amr.001.exchange:amr.001.odom_with_amcl.q
+Started pipeline amr.001.exchange:amr.001.task_feedback.q
+Started pipeline amr.002.exchange:amr.002.odom_with_amcl.q
+Started pipeline amr.001.exchange:amr.001.cmd_vel.q
+Topic amr.001.cmd_vel config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.odom_with_amcl config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.odom_with_amcl config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.task_feedback config updated: retention.ms=5000, cleanup.policy=delete
+Started pipeline amr.002.exchange:amr.002.odom_with_amcl.q
+Started pipeline amr.001.exchange:amr.001.task_feedback.q
+Started pipeline amr.001.exchange:amr.001.cmd_vel.q
+Started pipeline amr.001.exchange:amr.001.odom_with_amcl.q
+Topic amr.001.cmd_vel config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.odom_with_amcl config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.odom_with_amcl config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.task_feedback config updated: retention.ms=5000, cleanup.policy=delete
+Started pipeline amr.001.exchange:amr.001.task_feedback.q
+Started pipeline amr.001.exchange:amr.001.cmd_vel.q
+Started pipeline amr.001.exchange:amr.001.odom_with_amcl.q
+Started pipeline amr.002.exchange:amr.002.odom_with_amcl.q
+Topic amr.001.move_base_flex.SmacLattice.unsmoothed_plan created with retention.ms=5000 and cleanup.policy=delete
+Topic amr.001.move_base_flex.TebLocalPlannerROS.global_plan created with retention.ms=5000 and cleanup.policy=delete
+Started pipeline amr.001.exchange:amr.001.move_base_flex.TebLocalPlannerROS.global_plan.q
+Started pipeline amr.001.exchange:amr.001.move_base_flex.SmacLattice.unsmoothed_plan.q
+Topic amr.002.move_base_flex.TebLocalPlannerROS.global_plan config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.cmd_vel config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.move_base_flex.SmacLattice.unsmoothed_plan created with retention.ms=5000 and cleanup.policy=delete
+Started pipeline amr.002.exchange:amr.002.move_base_flex.TebLocalPlannerROS.global_plan.q
+Started pipeline amr.002.exchange:amr.002.cmd_vel.q
+Started pipeline amr.002.exchange:amr.002.move_base_flex.SmacLattice.unsmoothed_plan.q
+Topic amr.002.task_feedback config updated: retention.ms=5000, cleanup.policy=delete
+Started pipeline amr.002.exchange:amr.002.task_feedback.q
+Topic amr.002.move_base_flex.SmacLattice.unsmoothed_plan config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.cmd_vel config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.move_base_flex.SmacLattice.unsmoothed_plan config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.task_feedback config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.move_base_flex.TebLocalPlannerROS.global_plan config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.odom_with_amcl config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.move_base_flex.TebLocalPlannerROS.global_plan config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.odom_with_amcl config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.task_feedback config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.cmd_vel config updated: retention.ms=5000, cleanup.policy=delete
+Started pipeline amr.001.exchange:amr.001.cmd_vel.q
+Started pipeline amr.001.exchange:amr.001.move_base_flex.TebLocalPlannerROS.global_plan.q
+Started pipeline amr.001.exchange:amr.001.odom_with_amcl.q
+Started pipeline amr.002.exchange:amr.002.move_base_flex.TebLocalPlannerROS.global_plan.q
+Started pipeline amr.002.exchange:amr.002.move_base_flex.SmacLattice.unsmoothed_plan.q
+Started pipeline amr.002.exchange:amr.002.odom_with_amcl.q
+Started pipeline amr.001.exchange:amr.001.task_feedback.q
+Started pipeline amr.001.exchange:amr.001.move_base_flex.SmacLattice.unsmoothed_plan.q
+Started pipeline amr.002.exchange:amr.002.task_feedback.q
+Started pipeline amr.002.exchange:amr.002.cmd_vel.q
+Topic amr.001.cmd_vel_filtered config updated: retention.ms=5000, cleanup.policy=delete
+Started pipeline amr.001.exchange:amr.001.cmd_vel_filtered.q
+Topic amr.002.cmd_vel_filtered config updated: retention.ms=5000, cleanup.policy=delete
+Started pipeline amr.002.exchange:amr.002.cmd_vel_filtered.q
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Topic amr.001.cmd_vel config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.move_base_flex.SmacLattice.unsmoothed_plan created with retention.ms=5000 and cleanup.policy=delete
+Topic amr.001.move_base_flex.TebLocalPlannerROS.global_plan created with retention.ms=5000 and cleanup.policy=delete
+Topic amr.002.cmd_vel_filtered created with retention.ms=5000 and cleanup.policy=delete
+Topic amr.002.move_base_flex.SmacLattice.unsmoothed_plan created with retention.ms=5000 and cleanup.policy=delete
+Topic amr.001.odom_with_amcl config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.odom_with_amcl config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.cmd_vel created with retention.ms=5000 and cleanup.policy=delete
+Topic amr.001.task_feedback config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.task_feedback created with retention.ms=5000 and cleanup.policy=delete
+Topic amr.001.cmd_vel_filtered config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.move_base_flex.TebLocalPlannerROS.global_plan created with retention.ms=5000 and cleanup.policy=delete
+Started pipeline amr.002.exchange:amr.002.move_base_flex.TebLocalPlannerROS.global_plan.q
+Started pipeline amr.002.exchange:amr.002.odom_with_amcl.q
+Started pipeline amr.001.exchange:amr.001.task_feedback.q
+Started pipeline amr.002.exchange:amr.002.task_feedback.q
+Started pipeline amr.001.exchange:amr.001.cmd_vel_filtered.q
+Started pipeline amr.001.exchange:amr.001.cmd_vel.q
+Started pipeline amr.001.exchange:amr.001.move_base_flex.SmacLattice.unsmoothed_plan.q
+Started pipeline amr.001.exchange:amr.001.move_base_flex.TebLocalPlannerROS.global_plan.q
+Started pipeline amr.002.exchange:amr.002.cmd_vel_filtered.q
+Started pipeline amr.002.exchange:amr.002.move_base_flex.SmacLattice.unsmoothed_plan.q
+Started pipeline amr.001.exchange:amr.001.odom_with_amcl.q
+Started pipeline amr.002.exchange:amr.002.cmd_vel.q
+Topic amr.001.task_feedback config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.odom_with_amcl config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.move_base_flex.SmacLattice.unsmoothed_plan config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.move_base_flex.SmacLattice.unsmoothed_plan config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.cmd_vel config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.cmd_vel_filtered config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.odom_with_amcl config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.task_feedback config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.cmd_vel_filtered config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.cmd_vel config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.002.move_base_flex.TebLocalPlannerROS.global_plan config updated: retention.ms=5000, cleanup.policy=delete
+Topic amr.001.move_base_flex.TebLocalPlannerROS.global_plan config updated: retention.ms=5000, cleanup.policy=delete
+Started pipeline amr.002.exchange:amr.002.cmd_vel.q
+Started pipeline amr.001.exchange:amr.001.cmd_vel_filtered.q
+Started pipeline amr.002.exchange:amr.002.odom_with_amcl.q
+Started pipeline amr.001.exchange:amr.001.move_base_flex.TebLocalPlannerROS.global_plan.q
+Started pipeline amr.001.exchange:amr.001.cmd_vel.q
+Started pipeline amr.001.exchange:amr.001.task_feedback.q
+Started pipeline amr.002.exchange:amr.002.move_base_flex.SmacLattice.unsmoothed_plan.q
+Started pipeline amr.001.exchange:amr.001.move_base_flex.SmacLattice.unsmoothed_plan.q
+Started pipeline amr.001.exchange:amr.001.odom_with_amcl.q
+Started pipeline amr.002.exchange:amr.002.task_feedback.q
+Started pipeline amr.002.exchange:amr.002.cmd_vel_filtered.q
+Started pipeline amr.002.exchange:amr.002.move_base_flex.TebLocalPlannerROS.global_plan.q
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: i/o timeout
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: i/o timeout
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: i/o timeout
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: i/o timeout
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: i/o timeout
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: i/o timeout
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: i/o timeout
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: i/o timeout
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: no route to host
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: kafka: client has run out of available brokers to talk to: dial tcp 10.0.0.12:9092: connect: connection refused
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Error producing message: circuit breaker is open
+Partition producing message: -1
+Offset producing message: -1
+Topic amr.001.uavcanRosBridge.uavcan_ros_bridge.Battery created with retention.ms=5000 and cleanup.policy=delete
+Started pipeline amr.001.exchange:amr.001.uavcanRosBridge.uavcan_ros_bridge.Battery.q
+Topic amr.001.internet_info created with retention.ms=5000 and cleanup.policy=delete
+Started pipeline amr.001.exchange:amr.001.internet_info.q

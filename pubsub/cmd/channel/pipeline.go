@@ -10,9 +10,7 @@ import (
 	"sync"
 
 	"github.com/IBM/sarama"
-	// "github.com/aws/aws-sdk-go-v2/config"
-	// "github.com/aws/aws-sdk-go-v2/service/s3"
-	// "github.com/aws/aws-sdk-go-v2/aws"
+	"rmqkafka_pipeline/pubsub/utils"
 )
 
 type pipeline[S any, P any] struct {
@@ -44,6 +42,12 @@ func NewPipeline[S any, P any](conf config.RRPipelineConfig) (*pipeline[S, P], e
 	}
 
 	brokers := conf.KafkaConnConfig.Brokers
+
+	// Ensure topic exists with correct config
+	err = utils.EnsureTopicExists(brokers, conf.KafkaConfig.Topic)
+	if err != nil {
+		return nil, fmt.Errorf("failed to ensure Kafka topic %s: %v", conf.KafkaConfig.Topic, err)
+	}
 
 	config := sarama.NewConfig()
  	config.Producer.RequiredAcks = sarama.WaitForAll
